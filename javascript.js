@@ -11,6 +11,11 @@ window.addEventListener("gamepadconnected", function(e) {
     document.getElementsByTagName("p")[0].innerHTML = e.gamepad.id;
     updateLoop();
 
+    ball2 = document.getElementById("ball2");
+    ball2.style.backgroundColor = "green";
+    document.getElementsByTagName("p")[0].innerHTML = e.gamepad.id;
+    updateLoop();
+
 });
 
 function updateLoop() {
